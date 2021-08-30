@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+@import url('./assets/css/normalize.css');
+:root {
+  --clr-pink: #f06292;
+  --clr-lightgray: rgba(0,0,0,.54);
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,16 +22,15 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.bg-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 </style>

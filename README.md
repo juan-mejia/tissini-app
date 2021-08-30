@@ -1,19 +1,32 @@
-# tissini-app
+# TISSINI APP
 
-## Project setup
+## Descripción
+Esta aplicación es la reconstrucción de la tienda en linea https://mitienda.moda/.
+Las siguiente secciones están funcionando:
+- Home
+- Autenticación
+- Catalogo
+- Productos por catalogo
+
+## Tecnologías
+Para este proyecto se utilizó lo siguiente:
+- VueJS (Vuex, Router)
+- Axios
+- Material Design Icons
+- Tissini Api 
+
+## Configuración del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilación para desarrollo
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilación para produción
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
