@@ -27,7 +27,7 @@ const routes = [
     name: 'Catalog',
     component: Catalog,
     meta: {
-      // requiresAuth: true
+      requiresAuth: true
     }
   },
   {
@@ -35,7 +35,7 @@ const routes = [
     name: 'Products',
     component: Products,
     meta: {
-      // requiresAuth: true
+      requiresAuth: true
     }
   }
 ]
@@ -48,7 +48,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(rec => rec.meta.requiresAuth)) {
-    if (store.state.customer.id) {
+    if (store.state.customer.id || localStorage.getItem('customer')) {
       next();
     } else {
       next({ name: "Home" });

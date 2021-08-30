@@ -26,7 +26,7 @@ export default {
   name: 'Home',
   data(){
     return {
-      phone: '7865470213',
+      phone: '',
       feedback: '',
       loading: false
     }
